@@ -1,3 +1,51 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tagbanwa&display=swap'); */
+body{
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Noto Sans Tagbanwa', sans-serif; */
+    background-color: #ECECFE;
+    z-index: 1;
+}
+.card-title{
+    font-family: 'B612', sans-serif;
+    font-weight: bold;
+    color: #585C65;
+}
+.comingSoon{
+    font-family: 'B612', sans-serif;
+    font-weight: bold;
+}
+.correct-answer{
+    background-color: #9ce09e;
+    border-color: #1ebe23df;
+    color: white;
+    letter-spacing: .5px;
+}
+/* .correct-answer:hover{
+    background-color: #8add8de1 !important;
+    border-color: #06a70bdf !important;
+    color: white !important;
+    letter-spacing: .5px;
+} */
+.wrong-answer{
+    background-color: #d37373e1;
+    border-color: #cf4747df;
+    color: white;
+    letter-spacing: .5px;
+}
+/* .wrong-answer:hover{
+    background-color: #d37373e1 !important;
+    border-color: #c20f0fc0 !important;
+    color: white !important;
+    letter-spacing: .5px;
+} */
+@media (max-width: 360px) {
+    .loginSmallCircle, .loginBigCircle{
+        display: none;
+    }
+}
