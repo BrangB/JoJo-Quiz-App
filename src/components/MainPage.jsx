@@ -33,7 +33,7 @@ function MainPage() {
   return (
     <>
       <div className='absolute top-5 left-8 rounded-full p-2 z-10 bg-white xsm:block lg:hidden hover:bg-[#dee9f7] duration-200' onClick={handlerNav}><AiOutlineMenu size={'25px'} /></div>
-      <div className={navControl ? "miniNavigator fixed w-[100%] h-[100%] z-20 opacity-[1]  bg-[#00000068] backdrop-blur-sm justify-center items-center xsm:flex md:hidden transition duration-[400ms]" : "miniNavigator fixed w-[100%] h-[100%] z-[-999] opacity-0  bg-[#00000068] backdrop-blur-sm flex justify-center items-center xsm:flex md:hidden transition duration-[400ms]"}>
+      <div className={`miniNavigator fixed w-[100%] h-[100%]   bg-[#00000068] backdrop-blur-sm justify-center items-center ${navControl ? 'z-20 opacity-[1]': 'z-[-999] opacity-0'} xsm:flex lg:hidden transition duration-[400ms]`}>
         <div className='xsm:w-[200px] xsm:h-[250px] sm:w-[250px] sm:h-[300px] bg-[#ECECFE] xsm:p-2 relative flex flex-col items-center justify-center'>
           <div className="cross absolute top-0 m-auto bg-[#585FF2] xsm:p-3 xsm:text-md sm:text-lg text-[#ECECFE]">
             <FaTimes onClick={() => handlerNav()} />
@@ -70,7 +70,7 @@ function MainPage() {
               </li>
             </ul>
         </div>
-        <div className='relative xsm:top-[50px] xsm:w-[100%] xsm:h-auto md:w-[82%] lg:w-[84%] bg-[#ececfe00] xsm:p-4 md:p-8'>
+        <div className={`relative  xsm:top-[50px] xsm:w-[100%] xsm:h-auto lg:w-[84%] bg-[#ececfe00] xsm:p-4 md:p-8 `}>
               <Routes>
                   <Route  path='' element={<Dashboard/>}/>
                   <Route  path='/exercises' element={<Exercises/>}/>
