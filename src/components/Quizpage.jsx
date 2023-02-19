@@ -51,7 +51,7 @@ function Quizpage() {
   // const getIndexToshowColor = randomQuestion.indexOf(questions[checkIndex].answer)
 
   return (
-    <div className='flex w-[100%] h-[100%] xsm:items-center md:items-start xsm:justify-center md:pt-[100px] '>
+    <div className='flex w-[100%] xsm:h-[75%] md:h-[100%] xsm:items-center md:items-start xsm:justify-center md:pt-[100px]'>
       <Animation>
       <div className='flex flex-col w-[100%] h-[100%] items-center justify-center '>
         <div className="questionContainer xsm:w-[100%] sm:w-[400px] md:w-[600px]">
@@ -63,7 +63,7 @@ function Quizpage() {
               {
                 questions[checkIndex].Choices.map((choice, i) => {
                   return(
-                    <button key={i} id={i} className={[`xsm:px-4  xsm:py-4 xsm:text-sm md:text-[1rem] lg:text[1.08rem] xl:text-lg xsm:w-[48%] border-[1px] text-center xsm:mb-2 lg:mb-2 text-black ${TORF ? 'bg-[#ffffffa4] text-[#525252]' : 'hover:border-[#3940c2e3] bg-white hover:bg-[#ACB1F9]  hover:text-[#282c75] hover:opacity-95'} transition-all duration-200 cursor-pointer`, disabledBtn.includes(checkIndex) ? `${i === getIndexToshowColor ? 'correct-answer' :  i === currentSelect.num ? 'wrong-answer' : ''}` : ''].join(' ')} disabled={TORF} onClick={getAnswer}>{choice}</button>
+                    <button key={i} id={i} className={[`xsm:px-6  xsm:py-4 xsm:text-sm md:text-[1rem] lg:text[1.08rem] xl:text-lg xsm:w-[48%] border-[1px] text-center xsm:mb-2 lg:mb-2 text-black ${TORF ? 'bg-[#ffffffa4] text-[#525252]' : 'hover:border-[#3940c2e3] bg-white hover:bg-[#ACB1F9]  hover:text-[#282c75] hover:opacity-95'} transition-all duration-200 cursor-pointer`, disabledBtn.includes(checkIndex) ? `${i === getIndexToshowColor ? 'correct-answer' :  i === currentSelect.num ? 'wrong-answer' : ''}` : ''].join(' ')} disabled={TORF} onClick={getAnswer}>{choice}</button>
                   )
                 })
               }
