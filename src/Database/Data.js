@@ -13,81 +13,81 @@ export const Data = [
     },    
     {
         "id": 3,
-        "question": "My parents  _____  near Chennai.",
-        "Choices" : ["live","are living","have lived","will live"],
-        "answer" : "live"
+        "question": "What are you doing there? I _____ TV.",
+        "Choices" : ["watch","am watching","have watched","will watch"],
+        "answer" : "am watching"
     },    
     {
         "id": 4,
-        "question": "My parents  _____  near Chennai.",
-        "Choices" : ["live","are living","have lived","will live"],
-        "answer" : "live"
+        "question": "Watch carefully. First I _____ a cucumber and _____ it into small pieces.",
+        "Choices" : ["am taking, am cutting","take, cut","am taking, cut","take, am cutting"],
+        "answer" : "take, cut"
     },    
     {
         "id": 5,
-        "question": "My parents  _____  near Chennai.",
-        "Choices" : ["live","are living","have lived","will live"],
-        "answer" : "live"
+        "question": "I will follow you wherever you _____ .",
+        "Choices" : ["will go","are going","go","goes"],
+        "answer" : "go"
     },    
     {
         "id": 6,
-        "question": "My parents  _____  near Chennai.",
-        "Choices" : ["live","are living","have lived","will live"],
-        "answer" : "live"
+        "question": "I will call you if I _____ time.",
+        "Choices" : ["get","am getting","have got","will get"],
+        "answer" : "get"
     },    
     {
         "id": 7,
-        "question": "My parents  _____  near Chennai.",
-        "Choices" : ["live","are living","have lived","will live"],
-        "answer" : "live"
+        "question": "What _____ snakes _____ ?",
+        "Choices" : ["do, eat","are, eating","are, eat","were, eating"],
+        "answer" : "do, eat"
     },
     {
         "id": 8,
-        "question": "My parents  _____  near Chennai.",
-        "Choices" : ["live","are living","have lived","will live"],
-        "answer" : "live"
+        "question": "How _____ I _____ to the airport?",
+        "Choices" : ["do, get","am, getting","do, getting"],
+        "answer" : "do, get"
     },
     {
         "id": 9,
-        "question": "My parents  _____  near Chennai.",
-        "Choices" : ["live","are living","have lived","will live"],
-        "answer" : "live"
+        "question": "I _____ this fragrance very much.",
+        "Choices" : ["like","am liking","have liked","will like"],
+        "answer" : "like"
     },
     {
         "id": 10,
-        "question": "My parents  _____  near Chennai.",
-        "Choices" : ["live","are living","have lived","will live"],
-        "answer" : "live"
+        "question": "I will hit anybody who _____ me names.",
+        "Choices" : ["calls","is calling","has called","will call"],
+        "answer" : "calls"
     },    
     {
         "id": 11,
-        "question": "My parents  _____  near Chennai.",
-        "Choices" : ["live","are living","have lived","will live"],
-        "answer" : "live"
+        "question": "Why _____ she _____ on the table?",
+        "Choices" : ["does, stand","is, standing","does, standing","will stand"],
+        "answer" : "is, standing"
     },    
     {
         "id": 12,
-        "question": "My parents  _____  near Chennai.",
-        "Choices" : ["live","are living","have lived","will live"],
-        "answer" : "live"
+        "question": "The temple _____ on a hill outside the town.",
+        "Choices" : ["is standing","has stood","stands","will stand"],
+        "answer" : "stands"
     },
     {
         "id": 13,
-        "question": "My parents  _____  near Chennai.",
-        "Choices" : ["live","are living","have lived","will live"],
-        "answer" : "live"
+        "question": "Some teachers _____ much homework.",
+        "Choices" : ["give","gives","are give","are give"],
+        "answer" : "give"
     },
     {
         "id":14,
-        "question": "My parents  _____  near Chennai.",
-        "Choices" : ["live","are living","have lived","will live"],
-        "answer" : "live"
+        "question": "Taylor and Adam _____ good friends.",
+        "Choices" : ["be","is","are","does"],
+        "answer" : "are"
     },
     {
         "id": 15,
-        "question": "My parents  _____  near Chennai.",
-        "Choices" : ["live","are living","have lived","will live"],
-        "answer" : "live"
+        "question": "_____ your parents let you go to bed late?",
+        "Choices" : ["Are","Does","Do","Is"],
+        "answer" : "Do"
     },
 ]
 
