@@ -16,6 +16,7 @@ import { FaTv, FaBook, FaInfoCircle, FaAngleRight } from "react-icons/fa";
 import { HiChevronRight } from "react-icons/hi";
 import { AiOutlineMenu } from "react-icons/ai";
 import Animation from './Animation'
+import ComingSoon from './ComingSoon'
 
 function MainPage() {
   const [navControl, setNavControl] = useState(false);
@@ -74,6 +75,7 @@ function MainPage() {
                   <Route path='/exercises/completeAns' element={<CompleteAns/>}/>
                   <Route path='/exercises/multipleC/Quiz' element={<Quizpage />} />
                   <Route path='/exercises/multipleC/result' element={<Result />} />
+                  <Route path='/ComingSoon' element={<ComingSoon />} />
               </Routes>
         </div>
         <Animation>

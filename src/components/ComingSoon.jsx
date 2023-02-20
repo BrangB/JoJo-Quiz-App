@@ -1,14 +1,9 @@
-import React, {useEffect} from 'react'
-import multipleChoice from '../img/multiplechoice.svg'
-import dog from '../img/dog.svg'
-import {motion} from 'framer-motion'
+import React from 'react'
 import Animation from './Animation'
-import { Link } from 'react-router-dom'
 import { useLottie } from "lottie-react";
-import comingSoon from "../15003-lottie-coming-soon.json";
+import comingSoon from "../9844-loading-40-paperplane.json";
 
-function Dashboard(){
-
+function ComingSoon() {
     const options = {
         animationData: comingSoon,
         loop: true
@@ -30,4 +25,4 @@ function Dashboard(){
     )
 }
 
-export default Dashboard
+export default ComingSoon

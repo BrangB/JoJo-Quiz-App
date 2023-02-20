@@ -152,6 +152,67 @@ export const Data = {
             "Choices" : ["brought / wasn't / wasn't / left","was bring / didn't / was / left","brought / didn't / wasn't / left","bring / didn't / wasn't / leave"],
             "answer" : "brought / didn't / wasn't / left"
         }, 
+    ],
+    simpleFuture: [
+    {    "id": 1,
+        "question": "People will _____ on the moon in the future.",
+        "Choices" : ["be living","lives","live","be live"],
+        "answer" : "live"
+    },
+    {
+        "id": 2,
+        "question": "I _____ return the book after I read it.",
+        "Choices" : ["will","am","can","am going to"],
+        "answer" : "will"
+    },    
+    {
+        "id": 3,
+        "question": "Tom _____ at eight tomorrow morning.",
+        "Choices" : ["will arrives","arrive","is going to arrive","will arrive"],
+        "answer" : "will arrives"
+    },    
+    {
+        "id": 4,
+        "question": "When Tom arrives we _____ a party.",
+        "Choices" : ["will has","are going to have","have","will have"],
+        "answer" : "will have"
+    },    
+    {
+        "id": 5,
+        "question": "This letter is in French, and I don't know French. Can you help me? B: Sure, I _____ it for you.",
+        "Choices" : ["am going to translate","won't translate","will translate","am translate"],
+        "answer" : "will translate"
+    },    
+    {
+        "id": 6,
+        "question": "Can you give Ann a message for me? B: Sure, Probably _____ him at the meeting this evening.",
+        "Choices" : ["will see","am going to see","saw","am seeing"],
+        "answer" : "will see"
+    },    
+    {
+        "id": 7,
+        "question": "I am not sure but It _____ tomorrow.",
+        "Choices" : ["is going to rain","will rains","will going to rain","will rain"],
+        "answer" : "will rain"
+    },
+    {
+        "id": 8,
+        "question": "Nobody _______________ recognize you in that wig.",
+        "Choices" : ["are going to","will","won't", "isn't go to"],
+        "answer" : "will"
+    },
+    {
+        "id": 9,
+        "question": "Choose the correct sentence.",
+        "Choices" : ["He will comes tomorrow.","They will do it for me.","He will be at the meeting.","Where will you be yesterday?"],
+        "answer" : "They will do it for me."
+    },
+    {
+        "id": 10,
+        "question": "I will _____ right here until Jessica comes.",
+        "Choices" : ["wait","be waiting","waits","not waiting"],
+        "answer" : "wait"
+    }, 
     ]
 }
 // const randomQuestion = Data.Choices.map(answer => ({sort: Math.random(), value: answer})).sort((a,b) => a.sort - b.sort).map(obj => obj.value)
@@ -166,6 +227,15 @@ export const randomQuestions = Data.presentTense.slice(0, 10).map((item, i) => {
         
 })
 export const pastTenseQuestions = Data.pastTense.slice(0, 10).map((item, i) => {
+    return {
+        "id": i + 1,
+        "question": item.question,
+        "Choices" : item.Choices.map(answer => ({sort: Math.random(), value: answer})).sort((a,b) => a.sort - b.sort).map(obj => obj.value),
+        "answer" : item.answer
+    }
+    
+})
+export const simpleFutureQuestions = Data.simpleFuture.slice(0, 10).map((item, i) => {
     return {
         "id": i + 1,
         "question": item.question,

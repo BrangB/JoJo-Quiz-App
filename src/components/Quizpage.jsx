@@ -1,7 +1,7 @@
 import React from 'react'
 import img1 from '../img/undrawR.svg'
 import Animation from './Animation'
-import { pastTenseQuestions} from '../Database/Data'
+import { pastTenseQuestions, simpleFutureQuestions} from '../Database/Data'
 import { useState, useEffect} from 'react'
 import { useSelector, useDispatch} from 'react-redux'
 import { actions } from '../store/store'
@@ -10,15 +10,15 @@ import { randomQuestions } from '../Database/Data'
 
 function Quizpage() {
   const totalMark = useSelector(state => state.correctAnswerCount)
-  const currentPages = useSelector(state => state.currentPage)
+  // const currentPages = useSelector(state => state.currentPage)
   const currentContent = useSelector(state => state.currentContent)
 
-  const [questions, setQuestion] = useState(currentContent == "presentTense" ? randomQuestions : pastTenseQuestions)
   const [checkIndex, setCheckIndex] = useState(0)
   const [disabledBtn, setDisabledBtn] = useState([]);
   const [currentSelect, setCurrentSelect] = useState({num: 1});
 
-  console.log(currentContent)
+  const [questions, setQuestion] = useState(JSON.parse(`${currentContent == "presentTense" ? JSON.stringify(randomQuestions)  : currentContent == "pastTense" ? JSON.stringify(pastTenseQuestions) : currentContent == "futureTense" ? JSON.stringify(simpleFutureQuestions) : JSON.stringify(randomQuestions)}`))
+  // console.log(currentContent)
 
   const dispatch = useDispatch();
   const add = () => {
@@ -39,10 +39,10 @@ function Quizpage() {
     // const selectedAnswer = randomQuestion[e.target.id]
     setDisabledBtn([...disabledBtn, checkIndex])
     setCurrentSelect({num: parseInt(e.target.id, 10)})
-    console.log(currentSelect)
+    // console.log(currentSelect)
     if(correctAnswer === selectedAnswer){
       add();
-      console.log(totalMark)
+      // console.log(totalMark)
     }else{
       console.log(totalMark)
     }
