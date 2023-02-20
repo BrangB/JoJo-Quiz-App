@@ -1,7 +1,7 @@
 import React from 'react'
 import img1 from '../img/undrawR.svg'
 import Animation from './Animation'
-import {Data} from '../Database/Data'
+import { pastTenseQuestions} from '../Database/Data'
 import { useState, useEffect} from 'react'
 import { useSelector, useDispatch} from 'react-redux'
 import { actions } from '../store/store'
@@ -11,13 +11,14 @@ import { randomQuestions } from '../Database/Data'
 function Quizpage() {
   const totalMark = useSelector(state => state.correctAnswerCount)
   const currentPages = useSelector(state => state.currentPage)
+  const currentContent = useSelector(state => state.currentContent)
 
-  const [questions, setQuestion] = useState(randomQuestions)
+  const [questions, setQuestion] = useState(currentContent == "presentTense" ? randomQuestions : pastTenseQuestions)
   const [checkIndex, setCheckIndex] = useState(0)
   const [disabledBtn, setDisabledBtn] = useState([]);
   const [currentSelect, setCurrentSelect] = useState({num: 1});
 
-  console.log(randomQuestions[0])
+  console.log(currentContent)
 
   const dispatch = useDispatch();
   const add = () => {
@@ -57,13 +58,13 @@ function Quizpage() {
         <div className="questionContainer xsm:w-[100%] sm:w-[400px] md:w-[600px]">
             <div className="question relative bg-white opacity-95 xsm:w-[100%] xsm:min-h-[100px] md:min-h-[120px] h-auto flex flex-col items-center justify-center xsm:py-8 m-auto">
                 <div className="title absolute top-[-15px] bg-[#585FF2] xsm:px-4 xsm:py-1 md:px-6 md:py-1 lg:px-10 lg:rounded-md rounded-s text-white xsm:text-sm md:text-md ">Quiz</div>
-                <Animation><p className='text-center xsm:text-sm md:text-lg p-2 '>{questions[checkIndex].question}</p></Animation>
+                <Animation><p className='text-center xsm:text-sm md:text-lg p-2 text-[#444444]'>{questions[checkIndex].question}</p></Animation>
             </div>
             <div className="button w-full h-auto flex flex-wrap items-center justify-between xsm:mt-3 md:mt-5">
               {
                 questions[checkIndex].Choices.map((choice, i) => {
                   return(
-                    <button key={i} id={i} className={[`xsm:px-6  xsm:py-4 xsm:text-sm md:text-[1rem] lg:text[1.08rem] xl:text-lg xsm:w-[48%] border-[1px] text-center xsm:mb-2 lg:mb-2 text-black ${TORF ? 'bg-[#ffffffa4] text-[#525252]' : 'hover:border-[#3940c2e3] bg-white hover:bg-[#ACB1F9]  hover:text-[#282c75] hover:opacity-95'} transition-all duration-200 cursor-pointer`, disabledBtn.includes(checkIndex) ? `${i === getIndexToshowColor ? 'correct-answer' :  i === currentSelect.num ? 'wrong-answer' : ''}` : ''].join(' ')} disabled={TORF} onClick={getAnswer}>{choice}</button>
+                    <button key={i} id={i} className={[`xsm:px-6  xsm:py-4 xsm:text-sm md:text-[1rem] lg:text[1.08rem] xl:text-lg xsm:w-[48%] border-[1px] text-center xsm:mb-2 lg:mb-2 text-[#444444] ${TORF ? 'bg-[#ffffffa4] text-[#525252]' : 'hover:border-[#3940c2e3] bg-white hover:bg-[#ACB1F9]  hover:text-[#282c75] hover:opacity-95'} transition-all duration-200 cursor-pointer`, disabledBtn.includes(checkIndex) ? `${i === getIndexToshowColor ? 'correct-answer' :  i === currentSelect.num ? 'wrong-answer' : ''}` : ''].join(' ')} disabled={TORF} onClick={getAnswer}>{choice}</button>
                   )
                 })
               }

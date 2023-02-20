@@ -1,11 +1,7 @@
 import React from 'react'
-import img1 from '../img/screen.svg'
-import img2 from '../img/test.svg'
-import img3 from '../img/star.svg'
-import img4 from '../img/info.svg'
+import cat from '../img/cat.png'
+
 import logo from '../img/logodesign.png'
-import menuIcon from '../img/menu-burger.svg'
-import appIcon from '../img/apps.svg'
 import {Route, Routes, Link, NavLink,} from 'react-router-dom'
 import Dashboard from './Dashboard'
 import Exercises from './Exercises'
@@ -19,7 +15,7 @@ import Result from './Result'
 import { FaTv, FaBook, FaInfoCircle, FaAngleRight } from "react-icons/fa";
 import { HiChevronRight } from "react-icons/hi";
 import { AiOutlineMenu } from "react-icons/ai";
-
+import Animation from './Animation'
 
 function MainPage() {
   const [navControl, setNavControl] = useState(false);
@@ -80,6 +76,9 @@ function MainPage() {
                   <Route path='/exercises/multipleC/result' element={<Result />} />
               </Routes>
         </div>
+        <Animation>
+          <img className='fixed bottom-0 xsm:right-0 xsm:w-[180px] xsm:h-[70px] sm:w-[200px] sm:h-[80px]' src={cat} alt="" />
+        </Animation>
     </>
   )
 }

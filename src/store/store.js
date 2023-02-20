@@ -4,7 +4,8 @@ const answerCheck = createSlice({
     name: "CheckAnswer",
     initialState: {
         correctAnswerCount : 0,
-        currentPage : 0
+        currentPage : 0,
+        currentContent : ""
     },
     reducers : {
         addCorrectCount(state, action){
@@ -14,15 +15,13 @@ const answerCheck = createSlice({
             state.correctAnswerCount = 0
         },
         reduceCheckIndex(state, action){
-            // if(state.currentPage <= 0){
-            //     state.currentPage = 0
-            // }else{
-            //     state.currentPage--
-            // }
             state.currentPage--
         },
         increaseCheckIndex(state, action){
             state.currentPage++
+        },
+        changeCurrentContent(state, action){
+            state.currentContent = action.payload
         }
     }
 })
