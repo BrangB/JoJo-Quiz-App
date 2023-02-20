@@ -1,12 +1,17 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import { FaCheckCircle, FaTimesCircle} from "react-icons/fa";
 import { randomQuestions } from '../Database/Data';
 import { Link } from 'react-router-dom';
 import Animation from './Animation';
+import { actions } from '../store/store';
 
 function Result() {
     const totalMark = useSelector(state => state.correctAnswerCount)
+    const dispatch = useDispatch()
+    const resetCorrect = () => {
+        dispatch(actions.resetCorrectCount())
+    }
 
   return (
     <div className='w-full flex items-center justify-center p-10 flex-col'>
@@ -36,8 +41,8 @@ function Result() {
         </Animation>
         <Animation>
         <div className='flex xsm:mt-6 '>
-            <button className='xsm:w-auto bg-[#585FF2] opacity-95 rounded-sm text-center xsm:px-3 md:px-4 xsm:py-2 xsm:text-sm text-white m-2'><Link to='/exercises/multipleC/Quiz'>Restart</Link></button>
-            <button className='xsm:w-auto bg-[#585FF2] opacity-95 rounded-sm text-center xsm:px-3 md:px-4 xsm:py-2 xsm:text-sm text-white m-2'><Link to='/exercises/multipleC'>Back to exercises</Link></button>
+            <button className='xsm:w-auto bg-[#585FF2] opacity-95 rounded-sm text-center xsm:px-3 md:px-4 xsm:py-2 xsm:text-sm text-white m-2' onClick={resetCorrect}><Link to='/exercises/multipleC/Quiz'>Restart</Link></button>
+            <button className='xsm:w-auto bg-[#585FF2] opacity-95 rounded-sm text-center xsm:px-3 md:px-4 xsm:py-2 xsm:text-sm text-white m-2' onClick={resetCorrect}><Link to='/exercises/multipleC'>Back to exercises</Link></button>
         </div>
         </Animation>
     </div>

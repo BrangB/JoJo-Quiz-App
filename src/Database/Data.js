@@ -169,7 +169,7 @@ export const Data = {
         "id": 3,
         "question": "Tom _____ at eight tomorrow morning.",
         "Choices" : ["will arrives","arrive","is going to arrive","will arrive"],
-        "answer" : "will arrives"
+        "answer" : "will arrive"
     },    
     {
         "id": 4,
@@ -213,9 +213,558 @@ export const Data = {
         "Choices" : ["wait","be waiting","waits","not waiting"],
         "answer" : "wait"
     }, 
+    ],
+    presentContinuous: [
+    {    "id": 1,
+        "question": "I am _____ a sandwich now.",
+        "Choices" : ["eats","eating","not eat","eat"],
+        "answer" : "eating"
+    },
+    {
+        "id": 2,
+        "question": "I am busy right now. I _____ breakfast.",
+        "Choices" : ["am have","have","having","am having"],
+        "answer" : "am having"
+    },    
+    {
+        "id": 3,
+        "question": "My daughter _____ studying English at Istanbul University.",
+        "Choices" : ["is","does","do","not"],
+        "answer" : "is"
+    },    
+    {
+        "id": 4,
+        "question": "_____ you waiting for a bus?",
+        "Choices" : ["Do","Are","Does","Is"],
+        "answer" : "Are"
+    },    
+    {
+        "id": 5,
+        "question": "What _____? It looks awful.",
+        "Choices" : ["do you drinking","are you drink","are you drinking","does you drink"],
+        "answer" : "are you drinking"
+    },    
+    {
+        "id": 6,
+        "question": "We _____ enjoying our holiday here so much.",
+        "Choices" : ["don't","are","is","doesn't"],
+        "answer" : "are"
+    },    
+    {
+        "id": 7,
+        "question": "What _____ John _____ at the moment?",
+        "Choices" : ["does / do","is / do","are / doing","is / doing"],
+        "answer" : "is / doing"
+    },
+    {
+        "id": 8,
+        "question": "I _____ sitting down at the moment.",
+        "Choices" : ["am not","will be","is", "don't"],
+        "answer" : "am not"
+    },
+    {
+        "id": 9,
+        "question": "Don't disturb him. He _____.",
+        "Choices" : ["sleeps","is sleeping","is sleep","sleep"],
+        "answer" : "is sleeping"
+    },
+    {
+        "id": 10,
+        "question": "They are _____ their coats.",
+        "Choices" : ["not","put on","putting on","doesn't put"],
+        "answer" : "putting on"
+    }, 
+    ],
+    pastContinuous: [
+    {    "id": 1,
+        "question": "Yesterday, at six I _____ dinner.",
+        "Choices" : ["was preparing","was prepare","was prepared","did prepare"],
+        "answer" : "was preparing"
+    },
+    {
+        "id": 2,
+        "question": "My father ______ a novel while I _____ TV.",
+        "Choices" : ["was read / was watching","was reading / was watching","read / watched","was reading / was watching"],
+        "answer" : "was reading / was watching"
+    },    
+    {
+        "id": 3,
+        "question": "We _____ our school when he came in.",
+        "Choices" : ["talked","were talking","were talked","talking"],
+        "answer" : "were talking"
+    },    
+    {
+        "id": 4,
+        "question": "The kids _____ in the garden when it suddenly started to rain.",
+        "Choices" : ["played","playing","were playing","was playing"],
+        "answer" : "were playing"
+    },    
+    {
+        "id": 5,
+        "question": "Most of the time we _____ in the park.",
+        "Choices" : ["were sat","sitting","was sitting","were sitting"],
+        "answer" : "were sitting"
+    },    
+    {
+        "id": 6,
+        "question": "While I _____ in my room, my sister left home.",
+        "Choices" : ["was studying","studied","study","have studied"],
+        "answer" : "was studying"
+    },    
+    {
+        "id": 7,
+        "question": "My baby brother _____ loudly so I couldn't do my homework.",
+        "Choices" : ["was cried","cried","was crying","has cried"],
+        "answer" : "was crying"
+    },
+    {
+        "id": 8,
+        "question": "The teacher tried to explain but they they _____.",
+        "Choices" : ["were listening","weren't listening","listened", "have listened"],
+        "answer" : "weren't listening"
+    },
+    {
+        "id": 9,
+        "question": "_____ you doing your homework at six o'clock last night?",
+        "Choices" : ["Are","Have","Did","Were"],
+        "answer" : "Were"
+    },
+    {
+        "id": 10,
+        "question": "The teacher was angry because some students _____ football in the class when he came in.",
+        "Choices" : ["are playing","played","have played","were playing"],
+        "answer" : "were playing"
+    }, 
+    ],
+    presentPerfect : [
+    {    "id": 1,
+        "question": "I _____ my homework yet.",
+        "Choices" : ["have finish","has finished","did finished","haven't finished"],
+        "answer" : "haven't finished"
+    },
+    {
+        "id": 2,
+        "question": "My father is on the way. He _____ home yet.",
+        "Choices" : ["haven't arrived","hasn't arrived","didn't arrived","arrived"],
+        "answer" : "hasn't arrived"
+    },    
+    {
+        "id": 3,
+        "question": "I am not hungry. I have _____ eaten.",
+        "Choices" : ["yet","now","just","ever"],
+        "answer" : "just"
+    },    
+    {
+        "id": 4,
+        "question": "I have never _____ to Paris.",
+        "Choices" : ["been","went","go","was"],
+        "answer" : "been"
+    },    
+    {
+        "id": 5,
+        "question": "_____ you ever been to New York?",
+        "Choices" : ["Are","Were","Do","Have"],
+        "answer" : "Have"
+    },    
+    {
+        "id": 6,
+        "question": "I am still working. I haven't finished my work _____.",
+        "Choices" : ["already","yet","still","never"],
+        "answer" : "yet"
+    },    
+    {
+        "id": 7,
+        "question": "I am looking for my pen. I _____ it.",
+        "Choices" : ["have lost","lost","did lost","was lost"],
+        "answer" : "have lost"
+    },
+    {
+        "id": 8,
+        "question": "During the two years David _____ ten different jobs.",
+        "Choices" : ["has has","has had","have had", "have has"],
+        "answer" : "has had"
+    },
+    {
+        "id": 9,
+        "question": "I _____ a teacher since 2002.",
+        "Choices" : ["was","have be","have been","had be"],
+        "answer" : "have been"
+    },
+    {
+        "id": 10,
+        "question": "My friend _____ my new dress yet.",
+        "Choices" : ["haven't seen","didn't see","hasn't see","hasn't seen"],
+        "answer" : "hasn't seen"
+    }, 
+    ],
+    pastPerfect : [
+        {    "id": 1,
+        "question": "I couldn't see the teacher because he _____ before I arrived the school.",
+        "Choices" : ["had left","has left","left","was leaving"],
+        "answer" : "had left"
+    },
+    {
+        "id": 2,
+        "question": "He was very tired because he _____ the bags upstairs.",
+        "Choices" : ["have carried","had carried","carried","has carried"],
+        "answer" : "had carried"
+    },    
+    {
+        "id": 3,
+        "question": "I was starving when I arrived home. I _____ anything for two days.",
+        "Choices" : ["didn't eat","wasn't eaten","hadn't eaten","haven't eaten"],
+        "answer" : "hadn't eaten"
+    },    
+    {
+        "id": 4,
+        "question": "He asked me to give his book back but I _____ it.",
+        "Choices" : ["have lost","had lost","was lost","lost"],
+        "answer" : "had lost"
+    },    
+    {
+        "id": 5,
+        "question": "The boy knocked the door. There was nobody inside. His mother _____ yet.",
+        "Choices" : ["hasn't returned","haven't returned","hadn't returned","didn't return"],
+        "answer" : "hadn't returned"
+    },    
+    {
+        "id": 6,
+        "question": "The sun was shining and the birds were singing when she got out. What a lovely day, she said to herself. She looked at her car but it was not there. Somebody _____ it.",
+        "Choices" : ["has stolen","have stolen","had stolen","stole"],
+        "answer" : "had stolen"
+    },    
+    {
+        "id": 7,
+        "question": "She answered all of the questions in the exam because she _____ very well.",
+        "Choices" : ["was studied","had studied","has been studied","have studied"],
+        "answer" : "had studied"
+    },
+    {
+        "id": 8,
+        "question": "It was sunny but very cold. The snow _____ yet.",
+        "Choices" : ["hadn't completely melted","hasn't completely melted","haven't completely melted", "wasn't completely melted"],
+        "answer" : "hadn't completely melted"
+    },
+    {
+        "id": 9,
+        "question": "Clara looked out the window. The pavement was wet. It _____ at night.",
+        "Choices" : ["has rained","have been rained","have rained","had rained"],
+        "answer" : "had rained"
+    },
+    {
+        "id": 10,
+        "question": "He couldn't believe his eyes! His father _____ him a new laptop as a birthday gift.",
+        "Choices" : ["bought","has bought","had bought","was bought"],
+        "answer" : "had bought"
+    }, 
+    ],
+    presentPerfectContinuous: [
+        {    "id": 1,
+        "question": "I _____ English for two hours. I am very tired.",
+        "Choices" : ["have studying","study","am been studying","have been studying"],
+        "answer" : "have been studying"
+    },
+    {
+        "id": 2,
+        "question": "How long _____ this watch?",
+        "Choices" : ["have you been wearing","have you wear","are you wearing","did you wore"],
+        "answer" : "have you been wearing"
+    },    
+    {
+        "id": 3,
+        "question": "The roads are closed because it _____ since yesterday.",
+        "Choices" : ["was snowing","has been snowed","has been snowing","snows"],
+        "answer" : "has been snowing"
+    },    
+    {
+        "id": 4,
+        "question": "William is my best friend. I _____ him for years.",
+        "Choices" : ["have been knowing","have known","am knowing","have been known"],
+        "answer" : "have known"
+    },    
+    {
+        "id": 5,
+        "question": "It is 7 p.m. and Alfred _____ yet. He _____ in the field since morning.",
+        "Choices" : ["hasn't been returning / has been working","hasn't been returning / has worked","hasn't returned / has been working","hasn't returned / has worked"],
+        "answer" : "hasn't returned / has been working"
+    },    
+    {
+        "id": 6,
+        "question": "You _____ piano for years but you still can't play a single song.",
+        "Choices" : ["have been learning","learned","have learnt","have been learnt"],
+        "answer" : "have been learning"
+    },    
+    {
+        "id": 7,
+        "question": "She _____ out through the window since she heard the bed news.",
+        "Choices" : ["have been looking","has been looking","looks","has looked"],
+        "answer" : "has been looking"
+    },
+    {
+        "id": 8,
+        "question": "What a talkative man! He _____ since morning.",
+        "Choices" : ["has been talking","has talked","is talking", "talks"],
+        "answer" : "has been talking"
+    },
+    {
+        "id": 9,
+        "question": "The bus hasn't come yet. We _______________for an hour.",
+        "Choices" : ["are waiting","have waited","have been waited","have been waiting"],
+        "answer" : "have been waiting"
+    },
+    {
+        "id": 10,
+        "question": "My granny _____ my little sister for two days because my parents are on holiday.",
+        "Choices" : ["looks after","has looked after","has been looking after","has been looked after"],
+        "answer" : "has been looking after"
+    }, 
+    ],
+    pastPerfectContinuous : [
+    {    "id": 1,
+        "question": "My dad _____ smoking in the garage.",
+        "Choices" : ["has","had","had been","is"],
+        "answer" : "had been"
+    },
+    {
+        "id": 2,
+        "question": "The printer _____ working well.",
+        "Choices" : ["had not been","hadn't","had not","is"],
+        "answer" : "had not been"
+    },    
+    {
+        "id": 3,
+        "question": "Had the players _____ playing by the rules?",
+        "Choices" : ["been","have","are","be"],
+        "answer" : "been"
+    },    
+    {
+        "id": 4,
+        "question": "She _____ expecting the worst.",
+        "Choices" : ["had","'d been","had being","is"],
+        "answer" : "'d been"
+    },    
+    {
+        "id": 5,
+        "question": "Had the teachers _____ before the strike?",
+        "Choices" : ["been work","working","been working","been worked"],
+        "answer" : "been working"
+    },    
+    {
+        "id": 6,
+        "question": "Our pool pump _____ running properly before the storm.",
+        "Choices" : ["had not have","hadn't been","hadn't being"],
+        "answer" : "hadn't been"
+    },    
+    {
+        "id": 7,
+        "question": "My sister's roommate was upset. She _____ been waiting for an hour.",
+        "Choices" : ["had","has","have"],
+        "answer" : "had"
+    },
+    {
+        "id": 8,
+        "question": "I just heard about the accident. _____ been working all night?",
+        "Choices" : ["Had the driver","Had the driving","Have the driver"],
+        "answer" : "Had the driver"
+    },
+    {
+        "id": 9,
+        "question": "We were shocked to see her. _______ been expecting her.",
+        "Choices" : ["We are","We have","We'd not"],
+        "answer" : "We'd not"
+    },
+    {
+        "id": 10,
+        "question": "I finally reached my mom. ______ her all day.",
+        "Choices" : ["I'd been calling","I have called","I called"],
+        "answer" : "I'd been calling"
+    },    
+    ],
+    futureContinuous : [
+        {    "id": 1,
+        "question": "They _____ when I arrive there at tomorrow night.",
+        "Choices" : ["will be sleeping","will sleeping","slept","are going to sleep"],
+        "answer" : "will be sleeping"
+    },
+    {
+        "id": 2,
+        "question": "David’s daughter is studying at secondary school now and she _____ at university when David is 55.",
+        "Choices" : ["will studying","studies","has studied","will be studying"],
+        "answer" : "will be studying"
+    },    
+    {
+        "id": 3,
+        "question": "Next summer, when his wife and his children are on holiday, he _____ English.",
+        "Choices" : ["will learn","was learning","will be learning","will have learning"],
+        "answer" : "will be learning"
+    },    
+    {
+        "id": 4,
+        "question": "Will you be _____ there when I arrive?",
+        "Choices" : ["waited","waiting","wait","have waited"],
+        "answer" : "'waiting"
+    },    
+    {
+        "id": 5,
+        "question": "The spring is coming. Migratory birds _____ after a month.?",
+        "Choices" : ["will be returning","will be return","will returning","will have returning"],
+        "answer" : "will be returning"
+    },    
+    {
+        "id": 6,
+        "question": "I’ll be busy all day tomorrow. When you have fun with your friends I _____ entire house.",
+        "Choices" : ["will cleaned","clean","have been cleaning", "will be cleaning"],
+        "answer" : "will be cleaning"
+    },    
+    {
+        "id": 7,
+        "question": "She is studying hard. I think she _____ in a few months.",
+        "Choices" : ["is going to speaking","has been speaking","will be speaking", "will have spoken"],
+        "answer" : "will be speaking"
+    },
+    {
+        "id": 8,
+        "question": "The engineers _____ on another project when you come here.",
+        "Choices" : ["will working","will be working","will be worked", "will have worked"],
+        "answer" : "will be working"
+    },
+    {
+        "id": 9,
+        "question": "She is planning to start her new book soon. Probably she _____ her book next month.",
+        "Choices" : ["will write","is going to writing","will be writing", "will have writing"],
+        "answer" : "will be writing"
+    },
+    {
+        "id": 10,
+        "question": "Their parents _____ their house when they return home tomorrow..",
+        "Choices" : ["will be painted","will have paint","have painted", "will be painting"],
+        "answer" : "will be painting"
+    },   
+    ],
+    futurePerfect : [
+    {    "id": 1,
+        "question": "I thought I _____ (forget) you by then.",
+        "Choices" : ["will been forgotten","will have forget","will have been forget","will have forgotten"],
+        "answer" : "will have forgotten"
+    },
+    {
+        "id": 2,
+        "question": "When you arrive, we _____ (leave) the house.",
+        "Choices" : ["will have left","will be left","will be leaved","will have left"],
+        "answer" : "will have left"
+    },    
+    {
+        "id": 3,
+        "question": "When you reach the airport, the plane _____ (arrive).",
+        "Choices" : ["will have arrive","will be arrived","will have arrived","will been arrived"],
+        "answer" : "will have arrived"
+    },    
+    {
+        "id": 4,
+        "question": "By the time he comes, we ______ (finish) with the meal.",
+        "Choices" : ["will be finished","will have finished","will have been finished","will have finishing"],
+        "answer" : "'will have finished"
+    },    
+    {
+        "id": 5,
+        "question": "She _____ (graduate) from this university by June..",
+        "Choices" : ["will have been graduated","will been graduated","will have graduated","will be graduated"],
+        "answer" : "will have graduated"
+    },    
+    {
+        "id": 6,
+        "question": "By the time she meets me, I _____ (own) all of her family business.",
+        "Choices" : ["will been owned","will have been owned", "will be owned", "will have owned"],
+        "answer" : "will have owned"
+    },    
+    {
+        "id": 7,
+        "question": "When she comes, he ______ (be married) already.",
+        "Choices" : ["will have be married","will have married","will have been married", "will been married"],
+        "answer" : "will have been married"
+    },
+    {
+        "id": 8,
+        "question": "In June next year, my parents ______ (be married) for 50 years.",
+        "Choices" : ["will have been married","will been married","will have be married", "will have married"],
+        "answer" : "will have been married"
+    },
+    {
+        "id": 9,
+        "question": "I ______ (work) by June this year. Then I will quit.",
+        "Choices" : ["will be worked","will been worked","will had worked", "will have worked"],
+        "answer" : "will have worked"
+    },
+    {
+        "id": 10,
+        "question": "The way she started, she ______ (read) all books from our library by the time the next school year starts.",
+        "Choices" : ["will be read","will have been read","will have read", "will been read"],
+        "answer" : "will have read"
+    }, 
+    ],
+    futurePerfectContinuous : [
+    {    "id": 1,
+        "question": "Stephen _____ to the party as he's got a cold.",
+        "Choices" : ["won't have been coming","won't have come","won't be coming"],
+        "answer" : "will have forgotten"
+    },
+    {
+        "id": 2,
+        "question": "If you leave it until tomorrow, all the tickets will ______.",
+        "Choices" : ["have been selling","have been sold","be selling"],
+        "answer" : "will have left"
+    },    
+    {
+        "id": 3,
+        "question": "They ______ the air conditioning by the time the delegates arrive.",
+        "Choices" : ["will be fixing","will have fixed","will be fixed"],
+        "answer" : "will have arrived"
+    },    
+    {
+        "id": 4,
+        "question": "We'll be starving as we ______ since breakfast.",
+        "Choices" : ["will have been eating","will not be eating","won't have eaten"],
+        "answer" : "'will have finished"
+    },    
+    {
+        "id": 5,
+        "question": "I will let you know your results on Friday. The papers ______ by then.",
+        "Choices" : ["will have marked","will have been marked","will be marking"],
+        "answer" : "will have graduated"
+    },    
+    {
+        "id": 6,
+        "question": "Do you think you ______ the same job next year?",
+        "Choices" : ["will still be doing","will still have done", "will still have doing"],
+        "answer" : "will have owned"
+    },    
+    {
+        "id": 7,
+        "question": "This time tomorrow, ______ in the train on our way to Venice.",
+        "Choices" : ["we'll have sat","we'll be sitting","we will have sitting"],
+        "answer" : "will have been married"
+    },
+    {
+        "id": 8,
+        "question": "Fifty years from now people _______ to over 100.",
+        "Choices" : ["will be lived","will be living","will have lived"],
+        "answer" : "will have been married"
+    },
+    {
+        "id": 9,
+        "question": "My daughter _____ the school bus today as she has a dental appointment.",
+        "Choices" : ["will not have taken","won't be taking","won't have taking"],
+        "answer" : "will have worked"
+    },
+    {
+        "id": 10,
+        "question": "______ breakfast tomorrow morning, Mr Brown?",
+        "Choices" : ["Will you be having","Do you having","Will you have had"],
+        "answer" : "will have read"
+    },       
     ]
+
 }
-// const randomQuestion = Data.Choices.map(answer => ({sort: Math.random(), value: answer})).sort((a,b) => a.sort - b.sort).map(obj => obj.value)
 
 export const randomQuestions = Data.presentTense.slice(0, 10).map((item, i) => {
         return {
@@ -236,6 +785,87 @@ export const pastTenseQuestions = Data.pastTense.slice(0, 10).map((item, i) => {
     
 })
 export const simpleFutureQuestions = Data.simpleFuture.slice(0, 10).map((item, i) => {
+    return {
+        "id": i + 1,
+        "question": item.question,
+        "Choices" : item.Choices.map(answer => ({sort: Math.random(), value: answer})).sort((a,b) => a.sort - b.sort).map(obj => obj.value),
+        "answer" : item.answer
+    }
+    
+})
+export const presentContinuousQuestions = Data.presentContinuous.slice(0, 10).map((item, i) => {
+    return {
+        "id": i + 1,
+        "question": item.question,
+        "Choices" : item.Choices.map(answer => ({sort: Math.random(), value: answer})).sort((a,b) => a.sort - b.sort).map(obj => obj.value),
+        "answer" : item.answer
+    }
+    
+})
+export const pastContinuousQuestions = Data.pastContinuous.slice(0, 10).map((item, i) => {
+    return {
+        "id": i + 1,
+        "question": item.question,
+        "Choices" : item.Choices.map(answer => ({sort: Math.random(), value: answer})).sort((a,b) => a.sort - b.sort).map(obj => obj.value),
+        "answer" : item.answer
+    }
+    
+})
+export const presentPerfectQuestions = Data.presentPerfect.slice(0, 10).map((item, i) => {
+    return {
+        "id": i + 1,
+        "question": item.question,
+        "Choices" : item.Choices.map(answer => ({sort: Math.random(), value: answer})).sort((a,b) => a.sort - b.sort).map(obj => obj.value),
+        "answer" : item.answer
+    }
+    
+})
+export const pastPerfectQuestions = Data.pastPerfect.slice(0, 10).map((item, i) => {
+    return {
+        "id": i + 1,
+        "question": item.question,
+        "Choices" : item.Choices.map(answer => ({sort: Math.random(), value: answer})).sort((a,b) => a.sort - b.sort).map(obj => obj.value),
+        "answer" : item.answer
+    }
+    
+})
+export const presentPerfectContinuousQuestions = Data.presentPerfectContinuous.slice(0, 10).map((item, i) => {
+    return {
+        "id": i + 1,
+        "question": item.question,
+        "Choices" : item.Choices.map(answer => ({sort: Math.random(), value: answer})).sort((a,b) => a.sort - b.sort).map(obj => obj.value),
+        "answer" : item.answer
+    }
+    
+})
+export const pastPerfectContinuousQuestions = Data.pastPerfectContinuous.slice(0, 10).map((item, i) => {
+    return {
+        "id": i + 1,
+        "question": item.question,
+        "Choices" : item.Choices.map(answer => ({sort: Math.random(), value: answer})).sort((a,b) => a.sort - b.sort).map(obj => obj.value),
+        "answer" : item.answer
+    }
+    
+})
+export const futureContinuousQuestions = Data.futureContinuous.slice(0, 10).map((item, i) => {
+    return {
+        "id": i + 1,
+        "question": item.question,
+        "Choices" : item.Choices.map(answer => ({sort: Math.random(), value: answer})).sort((a,b) => a.sort - b.sort).map(obj => obj.value),
+        "answer" : item.answer
+    }
+    
+})
+export const futurePerfectQuestions = Data.futurePerfect.slice(0, 10).map((item, i) => {
+    return {
+        "id": i + 1,
+        "question": item.question,
+        "Choices" : item.Choices.map(answer => ({sort: Math.random(), value: answer})).sort((a,b) => a.sort - b.sort).map(obj => obj.value),
+        "answer" : item.answer
+    }
+    
+})
+export const futurePerfectContinuousQuestions = Data.futurePerfectContinuous.slice(0, 10).map((item, i) => {
     return {
         "id": i + 1,
         "question": item.question,

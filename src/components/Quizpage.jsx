@@ -1,12 +1,13 @@
 import React from 'react'
 import img1 from '../img/undrawR.svg'
 import Animation from './Animation'
-import { pastTenseQuestions, simpleFutureQuestions} from '../Database/Data'
+import { futureContinuousQuestions, futurePerfectContinuousQuestions, futurePerfectQuestions, pastContinuousQuestions, pastPerfectContinuousQuestions, pastPerfectQuestions, pastTenseQuestions, presentContinuousQuestions, presentPerfectContinuousQuestions, presentPerfectQuestions, simpleFutureQuestions} from '../Database/Data'
 import { useState, useEffect} from 'react'
 import { useSelector, useDispatch} from 'react-redux'
 import { actions } from '../store/store'
 import { Link } from 'react-router-dom'
 import { randomQuestions } from '../Database/Data'
+import {FaAngleDoubleLeft , FaAngleDoubleRight} from "react-icons/fa";
 
 function Quizpage() {
   const totalMark = useSelector(state => state.correctAnswerCount)
@@ -17,7 +18,7 @@ function Quizpage() {
   const [disabledBtn, setDisabledBtn] = useState([]);
   const [currentSelect, setCurrentSelect] = useState({num: 1});
 
-  const [questions, setQuestion] = useState(JSON.parse(`${currentContent == "presentTense" ? JSON.stringify(randomQuestions)  : currentContent == "pastTense" ? JSON.stringify(pastTenseQuestions) : currentContent == "futureTense" ? JSON.stringify(simpleFutureQuestions) : JSON.stringify(randomQuestions)}`))
+  const [questions, setQuestion] = useState(JSON.parse(`${currentContent === "presentTense" ? JSON.stringify(randomQuestions)  : currentContent === "pastTense" ? JSON.stringify(pastTenseQuestions) : currentContent === "futureTense" ? JSON.stringify(simpleFutureQuestions) : currentContent === "presentContinuous" ? JSON.stringify(presentContinuousQuestions) : currentContent === "pastContinuous" ? JSON.stringify(pastContinuousQuestions) : currentContent === "presentPerfect" ? JSON.stringify(presentPerfectQuestions) : currentContent === "pastPerfect" ? JSON.stringify(pastPerfectQuestions) : currentContent === "presentPerfectContinuous" ? JSON.stringify(presentPerfectContinuousQuestions) : currentContent === "pastPerfectContinuous" ? JSON.stringify(pastPerfectContinuousQuestions) : currentContent === "futureContinuous" ? JSON.stringify(futureContinuousQuestions) : currentContent === "futurePerfect" ? JSON.stringify(futurePerfectQuestions) : currentContent === "futurePerfectContinuous" ? JSON.stringify(futurePerfectContinuousQuestions) : JSON.stringify(randomQuestions)}`))
   // console.log(currentContent)
 
   const dispatch = useDispatch();
@@ -31,6 +32,9 @@ function Quizpage() {
   const nextPage = () => {
     setCheckIndex(checkIndex + 1)
     dispatch(actions.increaseCheckIndex())
+  }
+  const resetCorrect = () => {
+      dispatch(actions.resetCorrectCount())
   }
 
   const getAnswer = (e) => {
@@ -52,7 +56,13 @@ function Quizpage() {
   // const getIndexToshowColor = randomQuestion.indexOf(questions[checkIndex].answer)
 
   return (
-    <div className='flex w-[100%] xsm:h-[75%] md:h-[100%] xsm:items-center md:items-start xsm:justify-center md:pt-[100px]'>
+    <div className='flex-col w-[100%] xsm:h-[75%] md:h-[100%] xsm:items-center md:items-start xsm:justify-center '>
+        <Animation>
+        <div className='flex xsm:p-4 xsm:items-center lg:px-20 xsm:mb-10 lg:mb-5 xsm:justify-center md:justify-start ' onClick={resetCorrect}>
+          <Link to='/exercises/multipleC'><FaAngleDoubleLeft size={"35px"} className=' xsm:text-md text-white md:text-lg bg-[#5860f2e3] rounded-full border-1  border-[#5860f2e3] p-2 hover:scale-110 transition-all' /></Link>
+          {/* <Link><FaAngleDoubleRight className=' xsm:text-md md:text-lg hover:text-[#585FF2] transition-all'/></Link> */}
+        </div>
+      </Animation>
       <Animation>
       <div className='flex flex-col w-[100%] h-[100%] items-center justify-center '>
         <div className="questionContainer xsm:w-[100%] sm:w-[400px] md:w-[600px]">
