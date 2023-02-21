@@ -9,6 +9,9 @@ import { Tenses } from '../Database/TenseData';
 function MultipleC() {
   const dispatch = useDispatch();
   const currentContent = useSelector(state => state.currentContent)
+  const resetCorrect = () => {
+      dispatch(actions.resetCorrectCount())
+  }
   const contentHandler = (param) => {
     dispatch(actions.changeCurrentContent(param))
 
@@ -25,7 +28,7 @@ function MultipleC() {
         {
           Tenses.map(tense => {
             return(
-              <li className='list-none'>
+              <li className='list-none' onClick={resetCorrect}>
                 <Animation>
                   <Link to={tense.path} onClick={() => contentHandler(tense.functionParam)}>
                     <div className='xsm:w-[180px] xsm:h-[80px] sm:w-[230px] sm:h-[100px] md:w-[180px] md:h-[80px] xl:w-[260px] flex flex-col items-center justify-center bg-white xsm:m-3 xsm:p-4 md:p-3 xsm:shadow-sm md:shadow-md hover:md:shadow-lg transition-all'>

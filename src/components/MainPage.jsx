@@ -17,6 +17,7 @@ import { HiChevronRight } from "react-icons/hi";
 import { AiOutlineMenu } from "react-icons/ai";
 import Animation from './Animation'
 import ComingSoon from './ComingSoon'
+import About from './About'
 
 function MainPage() {
   const [navControl, setNavControl] = useState(false);
@@ -38,7 +39,7 @@ function MainPage() {
           <ul>
             <Link to='' onClick={() => handlerNav()} ><li className='xsm:text-md sm:text:lg nav-title xsm:m-6 sm:m-8 cursor-pointer hover:text-[#585FF2] transition-all font-bold text-[#585C65] text-center'>Dashboard</li></Link>
             <Link to='/exercises' onClick={() => handlerNav()} ><li className='xsm:text-md sm:text:lg nav-title xsm:m-6 sm:m-8 cursor-pointer hover:text-[] font-bold text-[#585C65] text-center'>Exercises</li></Link>
-            <li className='xsm:text-md sm:text:lg nav-title xsm:m-6 sm:m-8 cursor-pointer hover:text-[] font-bold text-[#585C65] text-center'>About me</li>
+            <Link to='/about' onClick={() => handlerNav()}><li className='xsm:text-md sm:text:lg nav-title xsm:m-6 sm:m-8 cursor-pointer hover:text-[] font-bold text-[#585C65] text-center'>About me</li></Link>
           </ul>
         </div>
       </div>
@@ -61,10 +62,12 @@ function MainPage() {
                   <p className={`xsm:text-sm lg:text-[1rem] duration-300 ${!open && "hidden"}`}>Exercises</p>
                 </li>
               </Link>
+              <Link to='/about'>
               <li className={`flex items-center justify-start mb-3 py-3 md:mb-4 md:py-2 xsm:px-3 rounded-xl duration-200  cursor-pointer  hover:bg-[#EBF0FE] hover:text-[#2e4694] ${activeNav === 3 ? "bg-[#EBF0FE] text-[#2e4694]" : 'text-[#626369]'}` } onClick={() => setActiveNav(3)}>
                 <div className='md:mr-4 '><FaInfoCircle size={'20px'}/></div>
                 <p className={`xsm:text-sm lg:text-[1rem] duration-300 ${!open && "hidden"}`}>About me</p>
               </li>
+              </Link>
             </ul>
         </div>
         <div className={`relative  xsm:top-[50px] xsm:w-[100%] xsm:h-auto lg:w-[84%] bg-[#ececfe00] xsm:p-4 md:p-8 `}>
@@ -76,6 +79,7 @@ function MainPage() {
                   <Route path='/exercises/multipleC/Quiz' element={<Quizpage />} />
                   <Route path='/exercises/multipleC/result' element={<Result />} />
                   <Route path='/ComingSoon' element={<ComingSoon />} />
+                  <Route path='/about' element={<About />} />
               </Routes>
         </div>
         <Animation>
