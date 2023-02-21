@@ -1,22 +1,25 @@
 import React from 'react'
-import logo from '../img/JoJo_Quiz_App.png'
+import logo from '../img/logodesign.png'
 import img1 from '../img/login.svg'
 import img2 from '../img/googleicon.png'
 
-function Loginform() {
+
+function Loginform(props) {
+
   return (
-    <>
-      <p className='loginSmallCircle rounded-full w-[120px] h-[120px] md:w-[150px] md:h-[150px] lg:w-[200px] lg:h-[200px] bg-[#ACB1F9] absolute top-[25%] left-[4%] md:top-[28%] md:left-[22%] lg:top-[15%] lg:left-[28%] z-0'></p>
-      <p className='loginBigCircle rounded-full w-[150px] h-[150px] md:w-[220px] md:h-[220px] lg:w-[300px] lg:h-[300px] bg-[#ACB1F9] absolute top-[65%] left-[65%]  md:top-[60%] md:left-[60%] lg:top-[60%] lg:left-[60%] z-0'></p>
-      <div className='p-5 flex flex-col items-center justify-start lg:w-[480px] lg:h-[712px] w-[290px] h-[500px] md:w-[330px] md:h-[560px] bg-[#ffffff7e] rounded-md lg:rounded-xl relative z-10'>
-        <img className='w-[120px] h-[120px] lg:w-[180px] lg:h-[180px]' src={logo} alt="logo" />
-        <img className='w-[270px] h-[170px] md:w-[300px] md:h-[200px] lg:w-[350px] lg:h-[250px] mt-4 lg:mt-8' src={img1} alt="" />
-        <div className='flex flex-row items-center justify-center px-6 md:px-9 py-2 rounded-md mt-24 bg-white cursor-pointer'>
-          <img className='w-[25px] h-[25px] lg:w-[30px] lg:h-[30px] mr-6' src={img2} alt="google icon" />
-          <p className='text-[#585C65] text-sm md:text-lg  font-bold'>LogIn with google</p>
+    <div className='w-full flex items-center justify-center '>
+      <div className='bg-[#ffffff7e] xsm:w-[280px] xsm:h-[450px] lg:w-[320px] lg:h-[470px] flex flex-col items-center xsm:p-4 rounded-md shadow-lg'>
+        <div className='flex items-center justify-center'>
+          <img className='xsm:w-[55px] xsm:h-[55px] xsm:mr-2' src={logo} alt="logo" />
+          <p className='xsm:text-2xl font-bold'>JoJo Quiz</p>
+        </div>
+        <img className='xsm:w-[200px] xsm:h-[300px] lg:w-[230px] lg:h-[320px] ' src={img1} alt="" />
+        <div className='flex flex-row items-center justify-center xsm:px-8 lg:px-12 py-2 rounded-md  bg-white cursor-pointer duration-200 shadow-sm hover:shadow-md' onClick={props.signInHandler}>
+          <img className='xsm:w-[25px] xsm:h-[25px]  xsm:mr-6 lg:mr-8' src={img2} alt="google icon" />
+          <p className='text-[#585C65] xsm:text-sm lg:text-md font-bold'>LogIn with google</p>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

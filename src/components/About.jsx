@@ -25,26 +25,32 @@ function About() {
             </div>
         </div>
         <AnimateHeight id="example-panel" duration={500} height={open1 ? "auto" : 60}>
+            <Animation>
             <div className={`bg-white xsm:p-4 mb-3 relative duration-300`}>
                 <div className={`${open1 ? "rotate-180" : ''} duration-300 absolute top-5 right-4`}  onClick={() => setOpen1(!open1)}><FaChevronDown /></div>
                 <h2 className='xsm:text-md lg:text-lg font-bold text-[#3d4d57] xsm:mb-5 lg:mb-4'>About The Website & Purpose</h2>
                 <p className='xsm:text-sm md:text-md text-justify'>This quiz app is an interactive and engaging platform that allows users to test their knowledge on English grammar. The app is designed with a user-friendly interface and offers a variety of question formats such as multiple choice, true or false (coming soon), and fill in the blank (coming soon).</p>
             </div>
+            </Animation>
         </AnimateHeight>
         <AnimateHeight id="example-panel" duration={500} height={open2 ? "auto" : 60}>
-        <div className={`bg-white xsm:p-4 mb-3 relative duration-300 border-t-4 border-[#ECECFE]`}>
-            <div className={`${open2 ? "rotate-180" : ''} duration-300 absolute top-5 right-4`} onClick={() => setOpen2(!open2)}><FaChevronDown /></div>
-            <h2 className='xsm:text-md lg:text-lg font-bold text-[#3d4d57] xsm:mb-5 lg:mb-4'>Future plan</h2>
-            <p className='xsm:text-sm md:text-md text-justify'>Some of my potential ideas may include expanding the range of subjects available for users to quiz themselves on, adding interactive features such as admin dashboard or rewards for high scores, implementing more advanced question types such as image or audio-based questions, and improving the app's performance and user experience through user feedback and testing. As a new features, I also want to add some exercises (multiple choice) deal with basic web development (HTML and CSS). And the future plans for your quiz app will depend on the needs and interests of the user base.</p>
-        </div>
+            <Animation>
+            <div className={`bg-white xsm:p-4 mb-3 relative duration-300 border-t-4 border-[#ECECFE]`}>
+                <div className={`${open2 ? "rotate-180" : ''} duration-300 absolute top-5 right-4`} onClick={() => setOpen2(!open2)}><FaChevronDown /></div>
+                <h2 className='xsm:text-md lg:text-lg font-bold text-[#3d4d57] xsm:mb-5 lg:mb-4'>Future plan</h2>
+                <p className='xsm:text-sm md:text-md text-justify'>Some of my potential ideas may include expanding the range of subjects available for users to quiz themselves on, adding interactive features such as admin dashboard or rewards for high scores, implementing more advanced question types such as image or audio-based questions, and improving the app's performance and user experience through user feedback and testing. As a new features, I also want to add some exercises (multiple choice) deal with basic web development (HTML and CSS). And the future plans for your quiz app will depend on the needs and interests of the user base.</p>
+            </div>
+            </Animation>
         </ AnimateHeight >
         <AnimateHeight id="example-panel" duration={500} height={open3 ? "auto" : 60}>
-        <div className={`bg-white xsm:p-4 mb-3 relative duration-300 border-t-4 border-[#ECECFE]`}>
-            <div className={`${open3 ? "rotate-180" : ''} duration-300 absolute top-5 right-4`} onClick={() => setOpen3(!open3)}><FaChevronDown /></div>
-            <h2 className='xsm:text-md lg:text-lg font-bold text-[#3d4d57] xsm:mb-5 lg:mb-4'>Developer & Languages</h2>
-            <p className='xsm:text-sm md:text-md text-justify'>This quiz app is an interactive and engaging platform that allows users to test their knowledge on English grammar. The app is designed with a user-friendly interface and offers a variety of question formats such as multiple choice, true or false (coming soon), and fill in the blank (coming soon).</p>
-        </div>
-        </ AnimateHeight >
+            <Animation>
+            <div className={`bg-white xsm:p-4 mb-3 relative duration-300 border-t-4 border-[#ECECFE]`}>
+                <div className={`${open3 ? "rotate-180" : ''} duration-300 absolute top-5 right-4`} onClick={() => setOpen3(!open3)}><FaChevronDown /></div>
+                <h2 className='xsm:text-md lg:text-lg font-bold text-[#3d4d57] xsm:mb-5 lg:mb-4'>Developer & Languages</h2>
+                <p className='xsm:text-sm md:text-md text-justify'>This quiz app is an interactive and engaging platform that allows users to test their knowledge on English grammar. The app is designed with a user-friendly interface and offers a variety of question formats such as multiple choice, true or false (coming soon), and fill in the blank (coming soon).</p>
+            </div>
+            </Animation>
+        </ AnimateHeight>
     </div>
   )
 }

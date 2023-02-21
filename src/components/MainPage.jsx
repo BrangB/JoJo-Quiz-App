@@ -37,8 +37,8 @@ function MainPage() {
             <FaTimes onClick={() => handlerNav()} />
           </div>
           <ul>
-            <Link to='/JoJo-Quiz-App' onClick={() => handlerNav()} ><li className='xsm:text-md sm:text:lg nav-title xsm:m-6 sm:m-8 cursor-pointer hover:text-[#585FF2] transition-all font-bold text-[#585C65] text-center'>Dashboard</li></Link>
-            <Link to='/JoJo-Quiz-App/exercises' onClick={() => handlerNav()} ><li className='xsm:text-md sm:text:lg nav-title xsm:m-6 sm:m-8 cursor-pointer hover:text-[] font-bold text-[#585C65] text-center'>Exercises</li></Link>
+            {/* <Link to='/JoJo-Quiz-App' onClick={() => handlerNav()} ><li className='xsm:text-md sm:text:lg nav-title xsm:m-6 sm:m-8 cursor-pointer hover:text-[#585FF2] transition-all font-bold text-[#585C65] text-center'>Dashboard</li></Link> */}
+            <Link to='/JoJo-Quiz-App' onClick={() => handlerNav()} ><li className='xsm:text-md sm:text:lg nav-title xsm:m-6 sm:m-8 cursor-pointer hover:text-[] font-bold text-[#585C65] text-center'>Exercises</li></Link>
             <Link to='/JoJo-Quiz-App/about' onClick={() => handlerNav()}><li className='xsm:text-md sm:text:lg nav-title xsm:m-6 sm:m-8 cursor-pointer hover:text-[] font-bold text-[#585C65] text-center'>About me</li></Link>
           </ul>
         </div>
@@ -50,13 +50,13 @@ function MainPage() {
             <h1 className={`${!open && "scale-0"} duration-300 md:text-lg xsm:hidden lg:block lg:text-xl font-bold`}>JoJo Quiz</h1>
           </div>
           <ul className='flex flex-col pt-8'>
-              <Link to='/JoJo-Quiz-App' >
+              {/* <Link to='/JoJo-Quiz-App' >
                 <li className={`flex items-center justify-start mb-3 py-3 md:mb-4 md:py-2 xsm:px-3 rounded-xl duration-200  cursor-pointer  hover:bg-[#EBF0FE]  hover:text-[#2e4694] ${activeNav === 1 ? "bg-[#EBF0FE] text-[#2e4694]" : 'text-[#626369]'}` } onClick={() => setActiveNav(1)}>
                   <div className='xsm:mr-4'><FaTv size={'20px'} /></div>
                   <p className={`xsm:text-sm lg:text-[1rem] duration-300 ${!open && "hidden"}`}>Dashboard</p>
                 </li>
-              </Link>
-              <Link to='/JoJo-Quiz-App/exercises' >
+              </Link> */}
+              <Link to='/JoJo-Quiz-App/' >
               <li className={`flex items-center justify-start mb-3 py-3 md:mb-4 md:py-2 xsm:px-3 rounded-xl duration-200  cursor-pointer  hover:bg-[#EBF0FE] hover:text-[#2e4694] ${activeNav === 2 ? "bg-[#EBF0FE] text-[#2e4694]" : 'text-[#626369]'}` } onClick={() => setActiveNav(2)}>
                   <div className='md:mr-4 '><FaBook size={'20px'}/></div>
                   <p className={`xsm:text-sm lg:text-[1rem] duration-300 ${!open && "hidden"}`}>Exercises</p>
@@ -72,12 +72,12 @@ function MainPage() {
         </div>
         <div className={`relative  xsm:top-[50px] xsm:w-[100%] xsm:h-auto lg:w-[84%] bg-[#ececfe00] xsm:p-4 md:p-8 `}>
               <Routes>
-                  <Route  path='/JoJo-Quiz-App' element={<Dashboard/>}/>
-                  <Route  path='/JoJo-Quiz-App/exercises' element={<Exercises/>}/>
-                  <Route path='/JoJo-Quiz-App/exercises/multipleC' element={<MultipleC/>}/>
-                  <Route path='/JoJo-Quiz-App/exercises/completeAns' element={<CompleteAns/>}/>
-                  <Route path='/JoJo-Quiz-App/exercises/multipleC/Quiz' element={<Quizpage />} />
-                  <Route path='/JoJo-Quiz-App/exercises/multipleC/result' element={<Result />} />
+                  {/* <Route path='/JoJo-Quiz-App' element={<Dashboard/>}/> */}
+                  <Route path='/JoJo-Quiz-App' element={<Exercises/>}/>
+                  <Route path='/JoJo-Quiz-App/multipleC' element={<MultipleC/>}/>
+                  <Route path='/JoJo-Quiz-App/completeAns' element={<CompleteAns/>}/>
+                  <Route path='/JoJo-Quiz-App/multipleC/Quiz' element={<Quizpage />} />
+                  <Route path='/JoJo-Quiz-App/multipleC/result' element={<Result />} />
                   <Route path='/JoJo-Quiz-App/ComingSoon' element={<ComingSoon />} />
                   <Route path='/JoJo-Quiz-App/about' element={<About />} />
               </Routes>

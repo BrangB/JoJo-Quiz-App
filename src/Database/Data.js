@@ -704,63 +704,63 @@ export const Data = {
     ],
     futurePerfectContinuous : [
     {    "id": 1,
-        "question": "Stephen _____ to the party as he's got a cold.",
-        "Choices" : ["won't have been coming","won't have come","won't be coming"],
-        "answer" : "will have forgotten"
+        "question": "My mom ______ for two days by the time I see her.",
+        "Choices" : ["has been travelling","will have been travelling","will has been travelling"],
+        "answer" : "will have been travelling"
     },
     {
         "id": 2,
-        "question": "If you leave it until tomorrow, all the tickets will ______.",
-        "Choices" : ["have been selling","have been sold","be selling"],
-        "answer" : "will have left"
+        "question": "They'll be exhausted by dinner. They will have been _____ hockey for seven hours.",
+        "Choices" : ["playing","played", "play"],
+        "answer" : "playing"
     },    
     {
         "id": 3,
-        "question": "They ______ the air conditioning by the time the delegates arrive.",
-        "Choices" : ["will be fixing","will have fixed","will be fixed"],
-        "answer" : "will have arrived"
+        "question": "Will you ______ here for ten years by the time of the Christmas party?",
+        "Choices" : ["have been worked","have to work","have been working"],
+        "answer" : "have been working"
     },    
     {
         "id": 4,
-        "question": "We'll be starving as we ______ since breakfast.",
-        "Choices" : ["will have been eating","will not be eating","won't have eaten"],
-        "answer" : "'will have finished"
+        "question": "It's a 24-hour relay. They'll only have been ______ for half the time by 6pm.",
+        "Choices" : ["ran","run","running"],
+        "answer" : "running"
     },    
     {
         "id": 5,
-        "question": "I will let you know your results on Friday. The papers ______ by then.",
-        "Choices" : ["will have marked","will have been marked","will be marking"],
-        "answer" : "will have graduated"
+        "question": "We _____ been waiting long.",
+        "Choices" : ["will not have","have not will","will have not"],
+        "answer" : "will not have"
     },    
     {
         "id": 6,
-        "question": "Do you think you ______ the same job next year?",
-        "Choices" : ["will still be doing","will still have done", "will still have doing"],
-        "answer" : "will have owned"
+        "question": "I _____ working for two years.",
+        "Choices" : ["willn't have been","won't have been", "not have been"],
+        "answer" : "won't have been"
     },    
     {
         "id": 7,
-        "question": "This time tomorrow, ______ in the train on our way to Venice.",
-        "Choices" : ["we'll have sat","we'll be sitting","we will have sitting"],
-        "answer" : "will have been married"
+        "question": "Won't they ______ travelling for two weeks by then?",
+        "Choices" : ["have been","had been","has been"],
+        "answer" : "have been"
     },
     {
         "id": 8,
-        "question": "Fifty years from now people _______ to over 100.",
-        "Choices" : ["will be lived","will be living","will have lived"],
-        "answer" : "will have been married"
+        "question": "The teachers will ______ for a month by the time the deal is made.",
+        "Choices" : ["have been striking","will strike","will be striking"],
+        "answer" : "have been striking"
     },
     {
         "id": 9,
-        "question": "My daughter _____ the school bus today as she has a dental appointment.",
-        "Choices" : ["will not have taken","won't be taking","won't have taking"],
-        "answer" : "will have worked"
+        "question": "The films run all night. We ______ movies for six hours by the time the feature comes on.",
+        "Choices" : ["watched","will have been watching","will watch"],
+        "answer" : "will have been watching"
     },
     {
         "id": 10,
-        "question": "______ breakfast tomorrow morning, Mr Brown?",
-        "Choices" : ["Will you be having","Do you having","Will you have had"],
-        "answer" : "will have read"
+        "question": "She'll still be groggy. She _____ undergoing surgery for three hours.",
+        "Choices" : ["will has been","will have been","will be have"],
+        "answer" : "will have been"
     },       
     ]
 

@@ -5,7 +5,8 @@ const answerCheck = createSlice({
     initialState: {
         correctAnswerCount : 0,
         currentPage : 0,
-        currentContent : ""
+        currentContent : "",
+        LogIncondition : false
     },
     reducers : {
         addCorrectCount(state, action){
@@ -22,6 +23,9 @@ const answerCheck = createSlice({
         },
         changeCurrentContent(state, action){
             state.currentContent = action.payload
+        },
+        signInFnc(state, action){
+            state.LogIncondition = true
         }
     }
 })

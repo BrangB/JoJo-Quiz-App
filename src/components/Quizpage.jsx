@@ -59,7 +59,7 @@ function Quizpage() {
     <div className='flex-col w-[100%] xsm:h-[75%] md:h-[100%] xsm:items-center md:items-start xsm:justify-center '>
         <Animation>
         <div className='flex xsm:p-4 xsm:items-center lg:px-20 xsm:mb-10 lg:mb-5 xsm:justify-center md:justify-start ' onClick={resetCorrect}>
-          <Link to='/exercises/multipleC'><FaAngleDoubleLeft size={"35px"} className=' xsm:text-md text-white md:text-lg bg-[#5860f2e3] rounded-full border-1  border-[#5860f2e3] p-2 hover:scale-110 transition-all' /></Link>
+          <Link to='/JoJo-Quiz-App/multipleC'><FaAngleDoubleLeft size={"35px"} className=' xsm:text-md text-white md:text-lg bg-[#5860f2e3] rounded-full border-1  border-[#5860f2e3] p-2 hover:scale-110 transition-all' /></Link>
           {/* <Link><FaAngleDoubleRight className=' xsm:text-md md:text-lg hover:text-[#585FF2] transition-all'/></Link> */}
         </div>
       </Animation>
@@ -85,7 +85,7 @@ function Quizpage() {
             <div className="button xsm:w-[90%] md:w-[70%] lg:w-[60%] mx-auto h-auto flex flex-wrap items-center justify-around xsm:mt-8 md:mt-8">
               <button className={['xsm:w-[25%] bg-[#585FF2] opacity-95 rounded-sm text-center xsm:px-1 xsm:py-2 xsm:text-sm text-white ', questions[checkIndex].id === 1 ? 'opacity-70 cursor-not-allowed' : ""].join(' ')} disabled={questions[checkIndex].id === 1 ? true : false} onClick={prevPage}>Previous</button>
               <button className={['xsm:w-[25%] bg-[#585FF2] opacity-95 rounded-sm text-center xsm:px-1 xsm:py-2 xsm:text-sm text-white ', questions[checkIndex].id === questions[questions.length - 1].id ? 'opacity-70 cursor-not-allowed' : ""].join(' ')} disabled={questions[checkIndex].id === questions[questions.length - 1].id ? true : false} onClick={nextPage}>Next</button>
-              <button className='xsm:w-[25%] bg-[#585FF2] opacity-95 rounded-sm text-center xsm:px-1 xsm:py-2 xsm:text-sm text-white'><Link to='/exercises/multipleC/result'>Check</Link></button>
+              <button className='xsm:w-[25%] bg-[#585FF2] opacity-95 rounded-sm text-center xsm:px-1 xsm:py-2 xsm:text-sm text-white'><Link to='/JoJo-Quiz-App/multipleC/result'>Check</Link></button>
             </div>
         </div>
         </div>

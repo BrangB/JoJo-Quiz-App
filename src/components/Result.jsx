@@ -41,8 +41,8 @@ function Result() {
         </Animation>
         <Animation>
         <div className='flex xsm:mt-6 '>
-            <button className='xsm:w-auto bg-[#585FF2] opacity-95 rounded-sm text-center xsm:px-3 md:px-4 xsm:py-2 xsm:text-sm text-white m-2' onClick={resetCorrect}><Link to='/JoJo-Quiz-App/exercises/multipleC/Quiz'>Restart</Link></button>
-            <button className='xsm:w-auto bg-[#585FF2] opacity-95 rounded-sm text-center xsm:px-3 md:px-4 xsm:py-2 xsm:text-sm text-white m-2' onClick={resetCorrect}><Link to='/JoJo-Quiz-App/exercises/multipleC'>Back to exercises</Link></button>
+            <button className='xsm:w-auto bg-[#585FF2] opacity-95 rounded-sm text-center xsm:px-3 md:px-4 xsm:py-2 xsm:text-sm text-white m-2' onClick={resetCorrect}><Link to='/JoJo-Quiz-App/multipleC/Quiz'>Restart</Link></button>
+            <button className='xsm:w-auto bg-[#585FF2] opacity-95 rounded-sm text-center xsm:px-3 md:px-4 xsm:py-2 xsm:text-sm text-white m-2' onClick={resetCorrect}><Link to='/JoJo-Quiz-App/multipleC'>Back to exercises</Link></button>
         </div>
         </Animation>
     </div>
