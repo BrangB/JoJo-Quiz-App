@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/JoJo-Quiz-App/static/css/main.b533854b.css",
-    "main.js": "/JoJo-Quiz-App/static/js/main.a3d2be6e.js",
+    "main.css": "/JoJo-Quiz-App/static/css/main.3a7b78b6.css",
+    "main.js": "/JoJo-Quiz-App/static/js/main.c9a29c27.js",
     "static/media/logodesign.png": "/JoJo-Quiz-App/static/media/logodesign.122528af96f9e698672b.png",
     "static/media/undrawR.svg": "/JoJo-Quiz-App/static/media/undrawR.9a3f9ad6917342afd81c911618a18352.svg",
     "static/media/googleicon.png": "/JoJo-Quiz-App/static/media/googleicon.9fa89a2572559e8b3d4d.png",
@@ -9,11 +9,11 @@
     "static/media/multiplechoice.svg": "/JoJo-Quiz-App/static/media/multiplechoice.e8e8c00b5c747f29ccc1336e9cff026f.svg",
     "static/media/dog.svg": "/JoJo-Quiz-App/static/media/dog.9036964104dd94b6a3b4e1a6b37dc683.svg",
     "index.html": "/JoJo-Quiz-App/index.html",
-    "main.b533854b.css.map": "/JoJo-Quiz-App/static/css/main.b533854b.css.map",
-    "main.a3d2be6e.js.map": "/JoJo-Quiz-App/static/js/main.a3d2be6e.js.map"
+    "main.3a7b78b6.css.map": "/JoJo-Quiz-App/static/css/main.3a7b78b6.css.map",
+    "main.c9a29c27.js.map": "/JoJo-Quiz-App/static/js/main.c9a29c27.js.map"
   },
   "entrypoints": [
-    "static/css/main.b533854b.css",
-    "static/js/main.a3d2be6e.js"
+    "static/css/main.3a7b78b6.css",
+    "static/js/main.c9a29c27.js"
   ]
 }
