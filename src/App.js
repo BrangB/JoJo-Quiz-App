@@ -32,8 +32,8 @@ function App() {
   return (
     <div className='w-full h-screen overflow-hidden flex '>
       <BrowserRouter>
-      {signIn ? <MainPage /> : <Loginform signInHandler={signInHandler} />}
-        {/* <MainPage /> */}
+      {/* {signIn ? <MainPage /> : <Loginform signInHandler={signInHandler} />} */}
+        <MainPage />
         {/* <Loginform /> */}
       </BrowserRouter>
     </div>
