@@ -9,6 +9,7 @@ import { actions } from './store/store'
 
 function App() {
   const signIn = useSelector(state => state.LogIncondition);
+  
   let auth = getAuth()
   let googleProvider = new GoogleAuthProvider();
   const dispatch = useDispatch();
@@ -31,7 +32,7 @@ function App() {
 
   return (
     <div className='w-full h-screen overflow-hidden flex '>
-      <BrowserRouter>
+      <BrowserRouter basename="/JoJo-Quiz-App">
       {/* {signIn ? <MainPage /> : <Loginform signInHandler={signInHandler} />} */}
         <MainPage />
         {/* <Loginform /> */}
